@@ -6,8 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello World ,I am {{name}} From Hyderabad</h1>
+    <h1>Hello World ,I am {{name}} From chittor</h1>
     <p>Age : {{age}}</p>
     
+    {% if age > 18 %}
+    <h2>Eligible To Vote</h2>
+    {%else%}
+    <h2>You are Not eligible to Vote</h2>
+    {% endif %}
 </body>
 </html>

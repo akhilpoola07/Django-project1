@@ -13,3 +13,12 @@ def chittor(request):
 def kadapa(request):
     response = "<h1>Welcome to Kadapa</h1>"
     return HttpResponse(response)
+
+def ind(request):
+    user_name = "Akhil"
+    age = 21
+    context = { 
+        "name":user_name,
+        "age": age
+        }
+    return render(request,"ind.html",context)
